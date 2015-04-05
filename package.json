@@ -1,0 +1,27 @@
+{
+  "name": "travis-test",
+  "version": "0.1.0",
+  "description": "Travis test configuration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --timeout 5000 -R xunit test/ > test-reports.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goabonga/travis-test.git"
+  },
+  "author": "Chris Becker <goabonga@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goabonga/travis-test/issues"
+  },
+  "homepage": "https://github.com/goabonga/travis-test",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1",
+    "mocha-html-reporter": "0.0.1",
+    "mocha-junit-reporter": "^1.1.0",
+    "mocha-tap-reporter": "^0.1.3",
+    "sinon": "^1.14.1"
+  }
+}
