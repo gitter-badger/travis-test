@@ -13,11 +13,11 @@ before_install:
   - sleep 5
 
 script:
-  - npm run-script test
-  - sleep 5
+#  - npm run-script test
+#  - sleep 5
   - npm run-script selenium
-  - sleep 5
-  - npm run-script karma
+#  - sleep 5
+#  - npm run-script karma
 
 addons:
   firefox: "31.0"
