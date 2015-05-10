@@ -20,4 +20,5 @@ deploy:
     secure: NWiOpw3fFSo6zzB1t3DWwUNqpT/1cGyHYCFnFq2yxaZ//2YRc7ZJmj94PF7VahrWqHZwHZT69bbp9DPWyRjn4gSNMtjF7Cq/s11RPExazFmpyulfRSoUjxpaWgU1DKpaCDJmJHe9BnjRFBS/oAG31sDj/v/dElY9T+rtATXRpRM=
   app: goabonga-welcome
   on:
+    node_js: '0.11'
     branch: master
