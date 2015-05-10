@@ -37,7 +37,7 @@ describe('Behaviour Tests', function () {
 
     before(function (done) {
         //Open a browser using webdriver remote
-        browser.init({browserName:'Firefox'})
+        browser.init({browserName:'firefox'})
             .then(function () {
                 done();
             });
