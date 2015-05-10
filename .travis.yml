@@ -4,13 +4,13 @@ node_js:
   - '0.11'
   - '0.10'
 
-before_script:
-  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.28.0.jar
-  - java -jar selenium-server-standalone-2.28.0.jar > /dev/null &
-  - sleep 3
-
-
 before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - sleep 3
+
+before_script:
+  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.28.0.jar
+  - java -jar selenium-server-standalone-2.28.0.jar > /dev/null &
+  - sleep 10
+
