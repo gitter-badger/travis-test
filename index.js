@@ -21,5 +21,4 @@ var homepage = require('./src/routes/homepage')();
 
 app.get('/', homepage.index);
 
-
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
