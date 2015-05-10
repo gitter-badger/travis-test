@@ -4,9 +4,11 @@
   "description": "Travis test configuration.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers Firefox",
-    "karma-test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
-    "mocah-test": "./node_modules/.bin/mocha --recursive --timeout 5000 -R xunit test/ > test-reports.xml"
+    "start": "node index.js",
+    "test": "node ./node_modules/karma/bin/karma start",
+    "karma": "node ./node_modules/karma/bin/karma start",
+    "tdd": "node ./node_modules/mocha/bin/_mocha --timeout 5000 ./test/server/tdd/tests.js",
+    "bdd": "node ./node_modules/mocha/bin/_mocha --timeout 5000 ./test/server/bdd/tests.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/goabonga/travis-test",
   "devDependencies": {
     "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
     "karma": "^0.12.31",
     "karma-chai": "^0.1.0",
     "karma-firefox-launcher": "^0.1.5",
@@ -27,6 +30,11 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "mocha": "^2.2.4",
     "sinon": "^1.14.1",
-    "sinon-chai": "^2.7.0"
+    "sinon-chai": "^2.7.0",
+    "wd": "^0.3.11"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2"
   }
 }
