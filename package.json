@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node ./node_modules/karma/bin/karma start",
+    "test": "node ./node_modules/mocha/bin/_mocha --timeout 5000 ./test/server/bdd/tests.js"
     "karma": "node ./node_modules/karma/bin/karma start",
     "tdd": "node ./node_modules/mocha/bin/_mocha --timeout 5000 ./test/server/tdd/tests.js",
     "bdd": "node ./node_modules/mocha/bin/_mocha --timeout 5000 ./test/server/bdd/tests.js"
