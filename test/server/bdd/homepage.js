@@ -6,7 +6,7 @@ module.exports = function (browser) {
     describe('Homepage', function () {
 
         beforeEach(function (done) {
-            browser.get('http://localhost:3000/')
+            browser.get('http://localhost:5000/')
                 .then(function () {
                     done();
                 },
