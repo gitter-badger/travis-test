@@ -13,8 +13,9 @@ before_install:
   - sleep 5
 
 script:
+  - "npm run-script test"
   - "npm run-script selenium"
   - "npm run-script karma"
 
 addons:
-  firefox: "17.0"
+  firefox: "31.0"
